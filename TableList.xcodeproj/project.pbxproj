@@ -13,6 +13,12 @@
 		A49604D829F047720010EE3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49604D629F047720010EE3D /* Main.storyboard */; };
 		A49604DA29F047730010EE3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49604D929F047730010EE3D /* Assets.xcassets */; };
 		A49604DD29F047730010EE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49604DB29F047730010EE3D /* LaunchScreen.storyboard */; };
+		A49604E529F047A40010EE3D /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49604E429F047A40010EE3D /* MusicTableViewController.swift */; };
+		A49604E829F04CA10010EE3D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49604E729F04CA10010EE3D /* DataManager.swift */; };
+		A49604EA29F04D180010EE3D /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49604E929F04D180010EE3D /* Song.swift */; };
+		A49604EC29F053070010EE3D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49604EB29F053070010EE3D /* DetailViewController.swift */; };
+		A49604EE29F05CBA0010EE3D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49604ED29F05CBA0010EE3D /* TableViewCell.swift */; };
+		A49604F029F05DC60010EE3D /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49604EF29F05DC60010EE3D /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		A49604D929F047730010EE3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49604DC29F047730010EE3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A49604DE29F047740010EE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A49604E429F047A40010EE3D /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		A49604E729F04CA10010EE3D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A49604E929F04D180010EE3D /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		A49604EB29F053070010EE3D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A49604ED29F05CBA0010EE3D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A49604EF29F05DC60010EE3D /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,29 @@
 		A49604CF29F047720010EE3D /* TableList */ = {
 			isa = PBXGroup;
 			children = (
+				A49604E629F04C670010EE3D /* Model */,
 				A49604D029F047720010EE3D /* AppDelegate.swift */,
 				A49604D229F047720010EE3D /* SceneDelegate.swift */,
 				A49604D429F047720010EE3D /* ViewController.swift */,
+				A49604EB29F053070010EE3D /* DetailViewController.swift */,
+				A49604E429F047A40010EE3D /* MusicTableViewController.swift */,
+				A49604EF29F05DC60010EE3D /* MovieTableViewController.swift */,
+				A49604ED29F05CBA0010EE3D /* TableViewCell.swift */,
 				A49604D629F047720010EE3D /* Main.storyboard */,
 				A49604D929F047730010EE3D /* Assets.xcassets */,
 				A49604DB29F047730010EE3D /* LaunchScreen.storyboard */,
 				A49604DE29F047740010EE3D /* Info.plist */,
 			);
 			path = TableList;
+			sourceTree = "<group>";
+		};
+		A49604E629F04C670010EE3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A49604E729F04CA10010EE3D /* DataManager.swift */,
+				A49604E929F04D180010EE3D /* Song.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49604EA29F04D180010EE3D /* Song.swift in Sources */,
+				A49604EE29F05CBA0010EE3D /* TableViewCell.swift in Sources */,
 				A49604D529F047720010EE3D /* ViewController.swift in Sources */,
+				A49604E829F04CA10010EE3D /* DataManager.swift in Sources */,
+				A49604E529F047A40010EE3D /* MusicTableViewController.swift in Sources */,
+				A49604F029F05DC60010EE3D /* MovieTableViewController.swift in Sources */,
 				A49604D129F047720010EE3D /* AppDelegate.swift in Sources */,
 				A49604D329F047720010EE3D /* SceneDelegate.swift in Sources */,
+				A49604EC29F053070010EE3D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
